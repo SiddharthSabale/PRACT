@@ -1,0 +1,15 @@
+using System.Collections;  
+using System.Collections.Generic;  
+using UnityEngine;  
+	  
+public class Sound : MonoBehaviour  {  
+    AudioSource mySource;  
+	  
+	    void OnMouseDown() {  
+	        mySource.Play();  
+	        Debug.Log("Clicked!");  
+	    }  
+	   void Start () {  
+	      mySource = GetComponent<AudioSource>();  
+	    }  
+	}  

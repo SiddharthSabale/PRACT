@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;  
+using UnityEngine.UI;
+using UnityEngine.Audio;
+using TMPro;
+using System;
+public class B : MonoBehaviour
+{
+   public TMP_Text myText;
+   public Slider mySlider;
+   void Update() {
+      myText.text = "Current Volume: " + mySlider.value;
+   }
+}
